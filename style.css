@@ -1,0 +1,81 @@
+body    {
+  padding: 0px;
+  margin:0px;
+  background-color: black;
+}
+
+.game{
+  width: 70%;
+  height: 40em;
+  background-color:#00001a;
+  position: relative;
+  top: 50px;
+  left: 15%;
+}
+a{
+  text-decoration: none;
+
+}
+
+.hidden{
+  opacity: 0;
+}
+.click{
+  color: red;
+  position: relative;
+  top: 50%;
+  left: 27%;
+  font-size: 2em ;
+width: fit-content;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+  animation: start 1s infinite;
+}
+
+@keyframes start{
+  0%{opacity: 100%;}
+  50%{opacity: 0%;}
+  100%{opacity: 100%;}
+}
+
+.player{
+  width: 100px;
+  height: 100px;
+  background-color: aqua;
+  position: relative;
+  top: 20em ;
+
+  left: 45%;
+
+
+}
+
+.playeranim{
+  animation: Jump 1s ;
+}
+
+@keyframes Jump{
+  0%{top: 20em;}
+  50%{top: 8em;}
+  100%{top: 20em;}
+}
+
+.obstacle{
+  width: 100px;
+  height: 50px;
+  background-color: lightgreen;
+  position: relative;
+  top: 17em;
+  left: 90%;
+
+
+}
+.obsanim{
+  animation: move 4s infinite;
+}
+
+@keyframes move{
+  0%{left: 90%;}
+  50%{left: 0%;}
+  1000%{left: 90%;}
+}
