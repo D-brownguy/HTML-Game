@@ -1,2 +1,2 @@
 
-A very simple game made by using Javascript , Html and Css.
+A simple game made using Html, Css and Javascript.The code is simple and readable.
